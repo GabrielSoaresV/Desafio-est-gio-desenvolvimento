@@ -3,6 +3,7 @@ import random
 # Classe Pai Funcionario
 class Funcionario:
     def __init__(self, nome, idade, salario):
+        
         # Construtor para inicializar o nome, idade e salário
         self.nome = nome
         self.idade = idade
@@ -15,6 +16,7 @@ class Funcionario:
 # Classe FuncionarioPJ (herda de Funcionario)
 class FuncionarioPJ(Funcionario):
     def __init__(self, nome, idade, horas_trabalhadas, valor_hora):
+        
         # Chama o construtor da classe base (Funcionario)
         super().__init__(nome, idade, 0)
         self.horas_trabalhadas = horas_trabalhadas
@@ -26,6 +28,7 @@ class FuncionarioPJ(Funcionario):
 # Classe FuncionarioPF (herda de Funcionario)
 class FuncionarioPF(Funcionario):
     def __init__(self, nome, idade, salario_fixo):
+        
         # Inicializa os atributos da classe pai (Funcionario)
         super().__init__(nome, idade, salario_fixo)
     
