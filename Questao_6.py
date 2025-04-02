@@ -1,6 +1,6 @@
 import random
 
-# Classe base Funcionario
+# Classe Pai Funcionario
 class Funcionario:
     def __init__(self, nome, idade, salario):
         # Construtor para inicializar o nome, idade e salário
@@ -33,7 +33,7 @@ class FuncionarioPF(Funcionario):
         # O salário do PF é fixo
         return self.salario
 
-# Função principal para testar o código
+# Função para dar valores aleatórios
 def main():
   
     nomes = ["Ana", "Carlos", "José", "Maria", "Lucia", "Paulo", "Fernanda"]
