@@ -28,7 +28,7 @@ int main() {
     char palnd[100];  // Array para armazenar a string
     
     printf("Digite uma palavra: ");
-    scanf("%s", palnd);  // Lê a palavra digitada e armazena no array 'palnd'
+    fgets(palnd, sizeof(palnd), stdin);  // Lê a palavra digitada e armazena no array 'palnd'
 
     // Calcula o tamanho da palavra utilizando a função 'tamanho_string'
     int tamanho = tamanho_string(palnd);
