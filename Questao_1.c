@@ -1,5 +1,6 @@
 // Bibliotecas
 #include <stdio.h>
+#include <string.h>
 
 // Função recursiva que calcula a soma dos dígitos de um número
 int soma(int N) {
@@ -16,18 +17,21 @@ int soma(int N) {
 int main() {
     
     int N; // Variável do número digitado pelo usuário
-
-    // Solicita ao usuário que digite um número inteiro positivo
-    printf("Digite um número inteiro positivo: ");
+    
+    // Loop de verificação
+    do {
+        
+    // Solicita ao usuário que digite um valor
+    printf("Digite um valor: ");
     scanf("%d", &N); 
-
-    // Verifica se o número é positivo caso não seja ela encerra o programa
+    
     if (N <= 0) {
         printf("Por favor, digite um número inteiro positivo.\n");
-        return 1; 
     }
+    
+    } while (N <= 0);
 
-    // A função soma calcula a soma de todos os dígitos do número N de forma recursiva
+    // A função soma calcula a soma de todos os dígitos
     int resultado = soma(N);
     
     printf("A soma dos dígitos de %d é: %d\n", N, resultado);
