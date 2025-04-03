@@ -1,6 +1,5 @@
 // Bibliotecas
 #include <stdio.h>
-#include <string.h>
 
 // Função recursiva que calcula a soma dos dígitos de um número
 int soma(int N) {
